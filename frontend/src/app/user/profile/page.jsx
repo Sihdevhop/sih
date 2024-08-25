@@ -17,23 +17,21 @@ const Profile = () => {
     setFriend(1);
   };
   return (
-    <div className="min-h-screen flex justify-center items-center p-6">
+    <div className="flex justify-center items-center py-12 md:py-6 lg:px-6">
       {/* Background Wrapper */}
-      <div className="w-full max-w-4xl">
+      <div className="max-w-[90%] ">
         {/* Top Section with Background Image */}
         <div
-          className="relative h-48 bg-cover bg-center rounded-t-lg"
+          className="h-40 sm:h-48 bg-cover bg-center rounded-t-lg"
           style={{ backgroundImage: "url('/background.jpg')" }}
         >
-          {/* Optional: Add overlay */}
-          <div className="absolute inset-0 bg-black opacity-30 rounded-t-lg"></div>
         </div>
 
         {/* Bottom Section with White Background */}
-        <div className="bg-white rounded-b-lg shadow-lg p-6">
+        <div className="bg-white rounded-b-lg p-6">
           <div className="flex flex-col items-center">
             {/* Profile Picture */}
-            <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-white -mt-16">
+            <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-yellow-300 -mt-16">
               <Image
                 src="/profile-1.webp"
                 alt="Profile Picture"
@@ -87,78 +85,73 @@ const Profile = () => {
           </div>
 
           {/* Bio Section */}
-          <div className="mt-6">
+          <div className="mt-6 flex items-center justify-center flex-col">
             <p className="text-gray-700 text-center mb-2">
               An artist of considerable range, Jenna is a name taken by
               Melbourne-raised, Brooklyn-based Nick Murphy writes, performs, and
               records all of his own music, giving it a warm, intimate feel with
               a solid groove structure.
             </p>
-            <nav className="bg-white shadow-lg mt-5 mb-5">
-              <div className="max-w-7xl mx-auto px-20">
-                <div className="flex justify-between">
-                  <div className="flex space-x-4 ">
+            <nav className="bg-white shadow-2xl shadow-slate-600 rounded-full mt-5 mb-5 px-6 lg:px-10 w-full overflow-x-auto">
+             
                     {/* Primary Navigation Links */}
-                    <div className="hidden md:flex items-center space-x-4">
+                    <div className="flex items-center justify-around gap-x-3 md:gap-x-4 py-6 min-w-[35rem] md:min-w-0">
                       <Link
                         href="/user/id/about"
-                        className="flex items-center py-5 px-3 text-gray-700 hover:text-gray-900"
+                        className="flex items-center text-gray-600 hover:text-gray-900"
                       >
                         <img
                           src="/about.jpg"
                           alt="Home"
-                          className="h-7 w-7 mr-2"
+                          className="h-7 w-7 mr-2 rounded-full"
                         />
-                        <span className="text-lg font-medium">About</span>
+                        <span className="md:text-lg font-medium">About</span>
                       </Link>
                       <Link
                         href="/user/id/resume"
-                        className="flex items-center py-5 px-3 text-gray-700 hover:text-gray-900"
+                        className="flex items-center text-gray-700 hover:text-gray-900"
                       >
                         <img
                           src="/resume.png"
                           alt="Resume"
                           className="h-7 w-7 mr-2"
                         />
-                        <span className="text-lg font-medium">Resume</span>
+                        <span className="md:text-lg font-medium">Resume</span>
                       </Link>
                       <Link
                         href="/user/id/work"
-                        className="flex items-center py-5 px-3 text-gray-700 hover:text-gray-900"
+                        className="flex items-center text-gray-700 hover:text-gray-900"
                       >
                         <img
                           src="/work.png"
                           alt="Works"
                           className="h-7 w-7 mr-2"
                         />
-                        <span className="text-lg font-medium">Works</span>
+                        <span className="md:text-lg font-medium">Works</span>
                       </Link>
                       <Link
                         href="/user/id/blog"
-                        className="flex items-center py-5 px-3 text-gray-700 hover:text-gray-900"
+                        className="flex items-center text-gray-700 hover:text-gray-900"
                       >
                         <img
                           src="/blogs.png"
                           alt="Blogs"
                           className="h-7 w-7 mr-2"
                         />
-                        <span className="text-lg font-medium">Blogs</span>
+                        <span className="md:text-lg font-medium">Blogs</span>
                       </Link>
                       <Link
                         href="/user/id/contact"
-                        className="flex items-center py-5 px-3 text-gray-700 hover:text-gray-900"
+                        className="flex items-center text-gray-700 hover:text-gray-900"
                       >
                         <img
                           src="/contact.png"
                           alt="Contact"
                           className="h-7 w-7 mr-2"
                         />
-                        <span className="text-lg font-medium">Contact</span>
+                        <span className="md:text-lg font-medium">Contact</span>
                       </Link>
                     </div>
-                  </div>
-                </div>
-              </div>
             </nav>
           </div>
         </div>

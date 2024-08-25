@@ -17,7 +17,7 @@ const UserSidebar = () => {
     }
   }
   return (
-    <nav className="bg-[#344C64] text-white py-8 md:px-5 md:text-lg lg:px-8 lg:text-xl font-semibold flex flex-col gap-6 h-full fixed top-0" >
+    <nav className="bg-[#344C64] text-white py-8 md:px-5 md:text-lg lg:px-8 lg:text-xl font-semibold flex flex-col gap-6 h-full " >
 
       <Link href="/" className='flex items-center gap-2 hover:text-indigo-300 transition duration-300 ease-in-out'>
       <img src="/home.svg" className='md:w-7 md:h-7 lg:w-9 lg:h-9' />
